@@ -1,0 +1,106 @@
+Last login: Tue Sep 19 15:51:26 on ttys000
+Ricardos-MacBook-Pro:~ RicardoRojas$ ls
+Applications	Desktop		Documents	Downloads	Library		Movies		Music		Pictures	Public
+Ricardos-MacBook-Pro:~ RicardoRojas$ cd desktop
+Ricardos-MacBook-Pro:desktop RicardoRojas$ ls
+DojoAssignments					RegistrationForm.html				gittest
+Golden Memorial					Screen Shot 2017-09-19 at 2.00.52 PM (2).png	hello_world.html
+IndentationPractice.html			Stan Lee Blog.html				test
+Ricardos-MacBook-Pro:desktop RicardoRojas$ cd dojoassignemtns
+-bash: cd: dojoassignemtns: No such file or directory
+Ricardos-MacBook-Pro:desktop RicardoRojas$ cd dojoassignments
+Ricardos-MacBook-Pro:dojoassignments RicardoRojas$ ls
+MEAN		Python		Ruby		WebFun		assignments.txt	iOS		netCore
+Ricardos-MacBook-Pro:dojoassignments RicardoRojas$ cd webfun
+Ricardos-MacBook-Pro:webfun RicardoRojas$ ls
+CSS		Git		HTML		Javascript	about.txt
+Ricardos-MacBook-Pro:webfun RicardoRojas$ cd git
+Ricardos-MacBook-Pro:git RicardoRojas$ ls
+about.txt		learningtoCommit.txt	new_project
+Ricardos-MacBook-Pro:git RicardoRojas$ mkdir GitHubRepoAssignment
+Ricardos-MacBook-Pro:git RicardoRojas$ cd githubrepoassignment
+Ricardos-MacBook-Pro:githubrepoassignment RicardoRojas$ ls
+Ricardos-MacBook-Pro:githubrepoassignment RicardoRojas$ git init
+Initialized empty Git repository in /Users/RicardoRojas/Desktop/DojoAssignments/WebFun/Git/GitHubRepoAssignment/.git/
+Ricardos-MacBook-Pro:githubrepoassignment RicardoRojas$ touch readme.md
+Ricardos-MacBook-Pro:githubrepoassignment RicardoRojas$ vim readne.md
+Ricardos-MacBook-Pro:githubrepoassignment RicardoRojas$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	readme.md
+	readne.md
+
+nothing added to commit but untracked files present (use "git add" to track)
+Ricardos-MacBook-Pro:githubrepoassignment RicardoRojas$ ls
+readme.md	readne.md
+Ricardos-MacBook-Pro:githubrepoassignment RicardoRojas$ vim readne.md
+Ricardos-MacBook-Pro:githubrepoassignment RicardoRojas$ rm readne.md
+Ricardos-MacBook-Pro:githubrepoassignment RicardoRojas$ ls
+readme.md
+Ricardos-MacBook-Pro:githubrepoassignment RicardoRojas$ vim readme.md
+Ricardos-MacBook-Pro:githubrepoassignment RicardoRojas$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	readme.md
+
+nothing added to commit but untracked files present (use "git add" to track)
+Ricardos-MacBook-Pro:githubrepoassignment RicardoRojas$ git add readme.md
+Ricardos-MacBook-Pro:githubrepoassignment RicardoRojas$ git commit m- "My first commit"
+error: pathspec 'm-' did not match any file(s) known to git.
+error: pathspec 'My first commit' did not match any file(s) known to git.
+Ricardos-MacBook-Pro:githubrepoassignment RicardoRojas$ git commit readme.md m- "my first commit"
+error: pathspec 'm-' did not match any file(s) known to git.
+error: pathspec 'my first commit' did not match any file(s) known to git.
+Ricardos-MacBook-Pro:githubrepoassignment RicardoRojas$ git commit -m "my first commit"
+[master (root-commit) 634b291] my first commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 readme.md
+Ricardos-MacBook-Pro:githubrepoassignment RicardoRojas$ git remote add origin https://github.com/xrojasx/GitHubRepoAssignment.git
+Ricardos-MacBook-Pro:githubrepoassignment RicardoRojas$ git push -u origin master
+Username for 'https://github.com': ricardorojas
+Password for 'https://ricardorojas@github.com': 
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/xrojasx/GitHubRepoAssignment.git/'
+Ricardos-MacBook-Pro:githubrepoassignment RicardoRojas$ git remote add origin https://github.com/xrojasx/GitHubRepoAssignment.git
+fatal: remote origin already exists.
+Ricardos-MacBook-Pro:githubrepoassignment RicardoRojas$ git push -u origin master
+Username for 'https://github.com': xrojasx
+Password for 'https://xrojasx@github.com': 
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/xrojasx/GitHubRepoAssignment.git/'
+Ricardos-MacBook-Pro:githubrepoassignment RicardoRojas$ git push -u origin master
+Username for 'https://github.com': xrojasx
+Password for 'https://xrojasx@github.com': 
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/xrojasx/GitHubRepoAssignment.git/'
+Ricardos-MacBook-Pro:githubrepoassignment RicardoRojas$ git remote add origin https://github.com/xrojasx/GitHubRepoAssignment.git
+fatal: remote origin already exists.
+Ricardos-MacBook-Pro:githubrepoassignment RicardoRojas$ git push -u origin master
+Username for 'https://github.com': xrojasx
+Password for 'https://xrojasx@github.com': 
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/xrojasx/GitHubRepoAssignment.git/'
+Ricardos-MacBook-Pro:githubrepoassignment RicardoRojas$ git remote add origin https://github.com/xrojasx/GitHubRepoAssignment.git
+fatal: remote origin already exists.
+Ricardos-MacBook-Pro:githubrepoassignment RicardoRojas$ git push -u origin master
+Username for 'https://github.com': xrojasx
+Password for 'https://xrojasx@github.com': 
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 299 bytes | 299.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/xrojasx/GitHubRepoAssignment.git
+ * [new branch]      master -> master
+Branch master set up to track remote branch master from origin.
+
